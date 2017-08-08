@@ -1,0 +1,6 @@
+[submodule "laproque"]
+	path = laproque
+	url = https://github.com/Buerner/laproque
+[submodule "ssrface"]
+	path = ssrface
+	url = https://github.com/Buerner/ssrface
