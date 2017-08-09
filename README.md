@@ -14,10 +14,10 @@ Also included is a command line application using the 3. method.
 ## Dependencies
 - [Jack Audio Connection Kit](http://www.jackaudio.org/)
 - [sndfile](http://www.mega-nerd.com/libsndfile/)
-- [ssrface](https://github.com/Buerner/laproque) (Included as submodule)
+- [ssrface](https://github.com/Buerner/ssrface) (Included as submodule)
     - [Asio](http://think-async.com/)
     - [RapidXml](http://rapidxml.sourceforge.net/)
-- [laproque](https://github.com/Buerner/ssrface) (Included as submodule)
+- [laproque](https://github.com/Buerner/laproque) (Included as submodule)
     - [FFTW](http://www.fftw.org/)
 
 ## Compiling
