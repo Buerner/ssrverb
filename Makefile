@@ -4,6 +4,11 @@ CFLAGS = -Wall -std=c++11 -O3
 
 OS := $(shell uname)
 
+ifeq ($(OS),Linux)
+     LIBS += -lpthread
+endif
+
+
 SEARCH_PATHS = -I../audioprocessing/src \
 	       -I../ssrinterface/src \
 	       -I../3D/src
@@ -15,10 +20,10 @@ BIN_DIR = $(BUILD_DIR)bins
 
 all: libs
 	cd guis/ISMFDNreverb && qmake && make
-	@if [ "$(OS)" == "Linux" ]; then\
+	@if [ "$(OS)" = "Linux" ]; then\
     	cp guis/ISMFDNreverb/build/ISMFDNreverb $(BIN_DIR);\
 	fi
-	@if [ "$(OS)" == "Darwin" ]; then\
+	@if [ "$(OS)" = "Darwin" ]; then\
     	cp -r guis/ISMFDNreverb/build/ISMFDNreverb.app $(BIN_DIR);\
 	fi
 	cd reverbs/randomizer && make bin
@@ -51,3 +56,4 @@ clean:
 	cd reverbs && make clean
 	cd guis/ISMFDNreverb && qmake && make clean
 	cd build && rm -rf ./*
+

@@ -1,11 +1,12 @@
 
 CC = g++
-CFLAGS = -Wall -std=c++11 -stdlib=libc++ -O3
+CFLAGS = -Wall -std=c++11 -O3
 
 OS := $(shell uname)
 
 ifeq ($(OS),Darwin)
-    CFLAGS +=  -mmacosx-version-min=10.7
+    CFLAGS += -mmacosx-version-min=10.7
+    CFLAGS += -stdlib=libc++
 endif
 
 SEARCH_PATHS = -I.. \
