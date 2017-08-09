@@ -11,21 +11,20 @@ A GUI for a reverberator using a combination of 1. and 2. is available. The inco
 
 Also included is a command line application using the 3. method.
 
-
 ## Dependencies
 - [Jack Audio Connection Kit](http://www.jackaudio.org/)
 
-- [laproque](https://github.com/Buerner/laproque) (Included as submodule)
+- [ssrface](https://github.com/Buerner/laproque) (Included as submodule)
     - [Asio](http://think-async.com/)
     - [RapidXml](http://rapidxml.sourceforge.net/)
 
-- [ssrface](https://github.com/Buerner/ssrface) (Included as submodule)
+- [laproque](https://github.com/Buerner/ssrface) (Included as submodule)
     - [FFTW](http://www.fftw.org/)
 
 ## Compiling
 `make`
 
---> In case the make process completed without errors, the library files are placed in the **build/libs** directory. Binaries are placed in **build/libs**.
+--> In case the make process completed without errors, the library files are placed in the **build/libs** directory. Binaries are placed in **build/bins**.
 
 ## Documentation
 Doxygen documentation for most classes is available. Doxyfiles are included in the rep.
